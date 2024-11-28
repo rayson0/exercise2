@@ -20,7 +20,7 @@ class Example(QWidget):
         self.update()
 
     def paintEvent(self):
-        qp = QPainter()
+        qp = QPainter(self)
         qp.begin()
         self.draw(qp, randint(1, 3), randint(20, 120))
         qp.end()
